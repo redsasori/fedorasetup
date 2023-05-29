@@ -99,7 +99,7 @@ flatpak install flathub io.github.hrkfdn.ncspot;
 
 #Spotify
 echo 'Installing Spotiy'
-sudo flatpak install flathub com.spotify.Client
+flatpak install flathub com.spotify.Client
 
 #small_apps
 echo 'Installing few handy apps'
