@@ -2,6 +2,7 @@ import os
 import subprocess
 import pyfiglet
 
+
 os.system('sudo dnf install -y python3-pip')
 os.system('pip install pyfiglet')
 
@@ -20,20 +21,20 @@ while True:
     uchoice=int(input("Enter Your Choice : "))
         
     if uchoice==1:
-        subprocess.call("./desktopamd.sh")
+        subprocess.call(["./desktopamd.sh"])
 
 
     elif uchoice==2:
         print("\nDoing Setup for You")
-        subprocess.call("./desktopintel.sh")
+        subprocess.call(["./desktopintel.sh"])
 
     elif uchoice==3:
         print("\nInstalling auto-cpufreq")
-        subprocess.call("./autocpufreq.sh")
+        subprocess.call(["./autocpufreq.sh"])
 
     elif uchoice==4:
         print("\nInstalling Gaming Stuff")
-        subprocess.call("./gaming.sh")
+        subprocess.call(["./gaming.sh"])
 
     elif uchoice==5:
         print("\nExiting the Script")
