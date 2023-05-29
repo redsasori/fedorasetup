@@ -11,11 +11,11 @@ print(result)
 
 while True:
 
-print("\n1) Desktop Setup AMD GPU")
-print("\n2) Desktop Setup Intel")
-print("\n3) Auto-cpufreq(Battery Saving utility for laptops)")
-print("\n4) Install Gaming stuff")
-print("\n5) To exit the script \n")
+    print("\n1) Desktop Setup AMD GPU")
+    print("\n2) Desktop Setup Intel")
+    print("\n3) Auto-cpufreq(Battery Saving utility for laptops)")
+    print("\n4) Install Gaming stuff")
+    print("\n5) To exit the script \n")
 
     uchoice=int(input("Enter Your Choice : "))
 
