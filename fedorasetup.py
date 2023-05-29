@@ -1,47 +1,44 @@
 import os
+import subprocess
+
 os.system('sudo dnf install -y python3-pip')
 os.system('pip install pyfiglet')
 
 import pyfiglet
-  
+
 result = pyfiglet.figlet_format("Script by NSM")
 print(result)
 
-PL1=("Applying Best Config for DNF --> /etc/dnf.conf ")
-print(PL1)
+print("\n1) Desktop Setup AMD GPU")
+print("\n2) Desktop Setup Intel")
+print("\n3) Auto-cpufreq(Battery Saving utility for laptops)")
+print("\n4) Install Gaming stuff")
+print("\n5) To exit the script \n")
 
-#os.system('sudo cp -a dnf.conf /etc/dnf/dnf.conf')
 
 while True:
-    
-    print("1) Desktop Setup")
-    print("2) Laptop Setup")
-    print("3) Install Gaming stuff")
-    print("4) AMD mesa-git")
-    print("5) Intel HW codecs")
-    print("type EXIT to to exit the script")
 
-    uchoice= input("Enter Your Choice")
-    
-    
-    if uchoice=="exit" or "EXIT" :
-        print("Exiting the Script")
-        break
-
+    uchoice=int(input("Enter Your Choice : "))
+        
     if uchoice==1:
-        print("Doing Setup for Your PC")
+        subprocess.call("./desktopamd.sh")
+
 
     elif uchoice==2:
-        print("Doing Setup for Laptop")
+        print("\nDoing Setup for You")
+        subprocess.call("./desktopintel.sh")
 
     elif uchoice==3:
-        print("Installig Gamerboi Stuff")
+        print("\nInstalling auto-cpufreq")
+        subprocess.call("./autocpufreq.sh")
 
     elif uchoice==4:
-        print("Installing mesa-git")
+        print("\nInstalling Gaming Stuff")
+        subprocess.call("./gaming.sh")
 
     elif uchoice==5:
-        print("Intel hw codecs")
+        print("\nExiting the Script")
+        break
 
     else:
-        print("Enter a valid choice")
+        print("\nEnter a valid choice")
