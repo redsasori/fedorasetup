@@ -1,5 +1,4 @@
 import os
-import subprocess
 import pyfiglet
 
 
@@ -19,22 +18,21 @@ print("\n5) To exit the script \n")
 while True:
 
     uchoice=int(input("Enter Your Choice : "))
-        
     if uchoice==1:
-        subprocess.call(["./desktopamd.sh"])
+        os.system("sh desktopamd.sh")
 
 
     elif uchoice==2:
         print("\nDoing Setup for You")
-        subprocess.call(["./desktopintel.sh"])
+         os.system("sh desktopintel.sh")
 
     elif uchoice==3:
         print("\nInstalling auto-cpufreq")
-        subprocess.call(["./autocpufreq.sh"])
+        os.system("sh autocpufreq.sh")
 
     elif uchoice==4:
         print("\nInstalling Gaming Stuff")
-        subprocess.call(["./gaming.sh"])
+        os.system("sh gaming.sh")
 
     elif uchoice==5:
         print("\nExiting the Script")
