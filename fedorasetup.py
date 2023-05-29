@@ -1,9 +1,10 @@
 import os
 import pyfiglet
 
-
 os.system('sudo dnf install -y python3-pip')
 os.system('pip install pyfiglet')
+os.system('chmod +x *.sh')
+
 
 result = pyfiglet.figlet_format("Script by NSM")
 print(result)
@@ -18,26 +19,26 @@ print("\n5) To exit the script \n")
 while True:
 
     uchoice=int(input("Enter Your Choice : "))
-    
-        if uchoice==1:
-            os.system("sh desktopamd.sh")
 
+    if uchoice==1:
+        print("\nDoing Setup for You")
+        os.system("sh desktopamd.sh")
 
-        elif uchoice==2:
-            print("\nDoing Setup for You")
-            os.system("sh desktopintel.sh")
+    elif uchoice==2:
+        print("\nDoing Setup for You")
+        os.system("sh desktopintel.sh")
 
-        elif uchoice==3:
-            print("\nInstalling auto-cpufreq")
-            os.system("sh autocpufreq.sh")
+    elif uchoice==3:
+        print("\nInstalling auto-cpufreq")
+        os.system("sh autocpufreq.sh")
 
-        elif uchoice==4:
-            print("\nInstalling Gaming Stuff")
-            os.system("sh gaming.sh")
+    elif uchoice==4:
+        print("\nInstalling Gaming Stuff")
+        os.system("sh gaming.sh")
 
-        elif uchoice==5:
-            print("\nExiting the Script")
-            break
+    elif uchoice==5:
+        print("\nExiting the Script")
+        break
 
-        else:
-            print("\nEnter a valid choice")
+    else:
+        print("\nEnter a valid choice")
