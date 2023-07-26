@@ -64,8 +64,7 @@ sudo dnf install -y flatseal;
 
 #Tg
 echo 'Installing Telegram Desktop'
-wget https://telegram.org/dl/desktop/linux && mv linux telegram.xz;
-
+flatpak install flathub org.telegram.desktop
 #Codium
 
 sudo rpmkeys --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg;
