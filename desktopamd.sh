@@ -4,7 +4,6 @@ echo 'Welcome to Fedora Desktop Setup Script made by NSM'
 echo 'Now we will install all the necessary dnf things for setting up Fedora'
 
 #axel_git
-sudo dnf install -y axel
 sudo dnf install -y python3
 sudo dnf install -y python3-pip
 
@@ -64,7 +63,7 @@ sudo dnf install -y flatseal;
 
 #Tg
 echo 'Installing Telegram Desktop'
-wget https://telegram.org/dl/desktop/linux && mv linux telegram.xz;
+flatpak install flathub org.telegram.desktop;
 
 #Codium
 
