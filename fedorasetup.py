@@ -1,13 +1,7 @@
 import os
-
-try:
-    import pyfiglet
-except ImportError:
-    print("pyfiglet library not found. Installing...")
-    os.system('sudo pip install pyfiglet')
-    import pyfiglet
-
+os.system('sudo pip install pyfiglet')
 os.system('chmod +x *.sh')
+import pyfiglet
 
 result = pyfiglet.figlet_format("Script by NSM")
 print(result)
