@@ -3,8 +3,8 @@ import os
 try:
     import pyfiglet
 except ImportError:
-    os.system('sudo dnf install -y python3-pip')
-    os.system('pip install pyfiglet')
+    print("pyfiglet library not found. Installing...")
+    os.system('sudo pip install pyfiglet')
     import pyfiglet
 
 os.system('chmod +x *.sh')
