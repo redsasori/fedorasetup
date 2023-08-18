@@ -1,4 +1,5 @@
 import os
+os.system('sudo dnf install python3-pip')
 os.system('sudo pip install pyfiglet')
 os.system('chmod +x *.sh')
 import pyfiglet
