@@ -13,12 +13,6 @@ sudo dnf install -y python3-pip
 echo 'Making some necessary changes in dnf config'
 sudo cp -a dnf.conf /etc/dnf/dnf.conf
 
-#best_speed_mirrors
-echo 'Best mirrors fr'
-
-sudo cp -a fedora.repo /etc/yum.repos.d/fedora.repo
-sudo cp -a fedora-updates.repo /etc/yum.repos.d/fedora-updates.repo
-
 #Selinux_Permmisive
 sudo cp -a config /etc/selinux/config
 
