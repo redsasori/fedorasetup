@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Install figlet if not already installed
 sudo dnf -y install figlet
 
 # Make shell scripts executable
