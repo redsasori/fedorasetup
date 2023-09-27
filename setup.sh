@@ -1,6 +1,9 @@
 #!/bin/bash
 
+#ScriptBy
 sudo dnf -y install figlet
+scriptby=$(figlet "Script by NSM")
+echo "$scriptby"
 
 # Make shell scripts executable
 chmod +x *.sh
