@@ -88,12 +88,6 @@ echo 'Installing QEMU'
 
 sudo dnf install -y qemu-kvm libvirt virt-install bridge-utils virt-manager libvirt-devel virt-top libguestfs-tools guestfs-tools && sudo systemctl start libvirtd && sudo systemctl enable libvirtd;
 
-
-#ncspot(terminal spotify)
-
-echo 'Installing ncspot'
-flatpak install flathub io.github.hrkfdn.ncspot;
-
 #Spotify
 echo 'Installing Spotiy'
 flatpak install flathub com.spotify.Client
