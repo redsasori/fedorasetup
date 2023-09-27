@@ -1,7 +1,11 @@
 #!/bin/bash
 
+#logfile
+log_file="/tmp/setup_sh.log"
+exec > >(tee -a "$log_file") 2>&1
+
 #ScriptBy
-sudo dnf -y install figlet > /dev/null 2>&1
+sudo dnf -y install figlet
 scriptby=$(figlet "Script by NSM")
 echo "$scriptby"
 
