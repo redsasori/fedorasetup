@@ -1,5 +1,5 @@
 #log_file
-log_file="/tmp/script_output.log"
+log_file="/tmp/desktopamd.log"
 exec > >(tee -a "$log_file") 2>&1
 
 #figletecho
