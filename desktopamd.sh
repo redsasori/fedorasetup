@@ -3,6 +3,12 @@ echo 'Welcome to Fedora Desktop Setup Script made by NSM'
 
 echo 'Now we will install all the necessary dnf things for setting up Fedora'
 
+sudo dnf install -y python3-pip;
+pip3 install pyfiglet;
+
+result = pyfiglet.figlet_format("Script by NSM")
+print(result)
+
 #dnfconfig
 
 echo 'Making some necessary changes in dnf config'
