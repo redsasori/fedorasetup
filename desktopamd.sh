@@ -1,8 +1,6 @@
 scriptby=$(figlet "Script by NSM")
 echo "$scriptby"
 
-echo 'Now we will install all the necessary dnf things for setting up Fedora'
-
 #dnfconfig
 echo 'Making some necessary changes in dnf config'
 sudo cp -a dnf.conf /etc/dnf/dnf.conf
