@@ -1,3 +1,13 @@
+#log_file
+log_file="/tmp/desktopintel.log"
+exec > >(tee -a "$log_file") 2>&1
+
+#figletecho
+fig_echo() {
+    message="$1"
+    figlet "$message"
+}
+
 scriptby=$(figlet "Script by NSM")
 echo "$scriptby"
 
