@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #ScriptBy
-sudo dnf -y install figlet
+sudo dnf -y install figlet > /dev/null 2>&1
 scriptby=$(figlet "Script by NSM")
 echo "$scriptby"
 
