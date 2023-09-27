@@ -1,9 +1,7 @@
 #Steam
-
-flatpak install flathub com.valvesoftware.Steam
+sudo dnf install steam
 
 #Heroic
-
 flatpak install flathub com.heroicgameslauncher.hgl
 
 #Protonup-qt
