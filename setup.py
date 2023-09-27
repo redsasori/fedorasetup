@@ -1,7 +1,5 @@
 import os
 os.system('sudo dnf install figlet')
-result=$(figlet "Script by NSM")
-print(result)
 os.system('chmod +x *.sh')
 
 while True:
