@@ -61,22 +61,21 @@ sudo rpmkeys --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw
 printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=download.vscodium.com\nbaseurl=https://download.vscodium.com/rpms/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg\nmetadata_expire=1h" | sudo tee -a /etc/yum.repos.d/vscodium.repo;
 sudo dnf install -y codium;
 
+#AppImageLauncher
+wget https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
+sudo rpm -i appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
+
 #OnlyOffice
 echo 'Removing LibreOffice'
 sudo dnf remove libreoffice*
 echo 'Downloading Onlyoffice'
 wget https://github.com/ONLYOFFICE/appimage-desktopeditors/releases/download/v7.3.3/DesktopEditors-x86_64.AppImage && chmod +x DesktopEditors-x86_64.AppImage;
 
-#AppImageLauncher
-
-wget https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
-sudo rpm -i appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
-
 #Obsidian
 echo 'Getting Obsidian for ya'
 wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.2.8/Obsidian-1.2.8.AppImage && sudo chmod +x Obsidian-1.2.8.AppImage;
 
-cp -a *.AppImage /home/$USER/Applications
+mv -a *.AppImage /home/$USER/Applications
 
 #Alacritty
 echo 'Downloading the Best terminal alacritty' 
