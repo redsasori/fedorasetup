@@ -15,9 +15,6 @@ sudo cp -a dnf.conf /etc/dnf/dnf.conf
 #Selinux_Permmisive
 sudo cp -a config /etc/selinux/config
 
-#fedora3rdparty
-sudo dnf install -y fedora-workstation-repositories
-
 #update
 echo 'Updating the system'
 sudo dnf --refresh upgrade;
