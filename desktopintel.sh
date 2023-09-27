@@ -99,8 +99,5 @@ sudo dnf install -y gnome-tweaks;
 echo 'Installing CoreCtrl'
 sudo dnf install corectrl;
 
-#intelcodec
-sudo dnf install libva-intel-driver
-
 sync;
 
