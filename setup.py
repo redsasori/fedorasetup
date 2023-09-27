@@ -1,8 +1,6 @@
 import os
-os.system(sudo dnf install python3-pip)
-os.system(pip install pyfiglet)
-import pyfiglet
-result = pyfiglet.figlet_format("Script by NSM")
+os.system('sudo dnf install figlet')
+result = figlet("Script by NSM")
 print(result)
 os.system('chmod +x *.sh')
 
