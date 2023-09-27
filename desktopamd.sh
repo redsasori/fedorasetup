@@ -3,9 +3,6 @@ echo 'Welcome to Fedora Desktop Setup Script made by NSM'
 
 echo 'Now we will install all the necessary dnf things for setting up Fedora'
 
-sudo dnf install -y python3
-sudo dnf install -y python3-pip
-
 #dnfconfig
 
 echo 'Making some necessary changes in dnf config'
