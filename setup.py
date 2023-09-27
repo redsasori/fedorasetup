@@ -1,6 +1,6 @@
 import os
-os.system(sudo dnf install python3-pip;)
-os.system(pip install pyfiglet;)
+os.system(sudo dnf install python3-pip)
+os.system(pip install pyfiglet)
 import pyfiglet
 result = pyfiglet.figlet_format("Script by NSM")
 print(result)
