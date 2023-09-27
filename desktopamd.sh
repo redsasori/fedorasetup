@@ -1,5 +1,5 @@
-scriptby=$(figlet "Script by NSM")
-echo "$scriptby"
+log_file="/tmp/script_output.log"
+exec > >(tee -a "$log_file") 2>&1
 
 #dnfconfig
 echo 'Making some necessary changes in dnf config'
