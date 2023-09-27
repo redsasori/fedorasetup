@@ -70,9 +70,16 @@ sudo dnf remove libreoffice*
 echo 'Downloading Onlyoffice'
 wget https://github.com/ONLYOFFICE/appimage-desktopeditors/releases/download/v7.3.3/DesktopEditors-x86_64.AppImage && chmod +x DesktopEditors-x86_64.AppImage;
 
+#AppImageLauncher
+
+wget https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
+sudo rpm -i appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
+
 #Obsidian
 echo 'Getting Obsidian for ya'
 wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.2.8/Obsidian-1.2.8.AppImage && sudo chmod +x Obsidian-1.2.8.AppImage;
+
+cp -a *.AppImage /home/$USER/Applications
 
 #Alacritty
 echo 'Downloading the Best terminal alacritty' 
