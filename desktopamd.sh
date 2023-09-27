@@ -2,7 +2,6 @@ echo 'Welcome to Fedora Desktop Setup Script made by NSM'
 
 
 echo 'Now we will install all the necessary dnf things for setting up Fedora'
-
 sudo dnf install -y python3-pip;
 pip3 install pyfiglet;
 
@@ -10,7 +9,6 @@ result = pyfiglet.figlet_format("Script by NSM")
 print(result)
 
 #dnfconfig
-
 echo 'Making some necessary changes in dnf config'
 sudo cp -a dnf.conf /etc/dnf/dnf.conf
 
@@ -21,21 +19,15 @@ sudo cp -a config /etc/selinux/config
 sudo dnf install -y fedora-workstation-repositories
 
 #update
-
 echo 'Updating the system'
-
 sudo dnf --refresh upgrade;
 
 #RPMFUSION
-
 echo 'Installing free & nonfree rpmfusion'
-
 sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 #Codecs
-
 echo 'Installing Necessary Codecs'
-
 sudo dnf swap ffmpeg-free ffmpeg --allowerasing;
 sudo dnf groupupdate multimedia sound-and-video;
 
@@ -44,7 +36,6 @@ sudo dnf install -y rpmfusion-nonfree-release-tainted
 sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware"
 
 #Dragora
-
 echo  'Installing Dragora'
 sudo dnf install -y dnfdragora;
 
@@ -92,9 +83,7 @@ echo 'Wanna fetch i gotchu Installing fastfetch'
 sudo dnf install -y fastfetch;
 
 #QEMU
-
 echo 'Installing QEMU'
-
 sudo dnf install -y qemu-kvm libvirt virt-install bridge-utils virt-manager libvirt-devel virt-top libguestfs-tools guestfs-tools && sudo systemctl start libvirtd && sudo systemctl enable libvirtd;
 
 #Spotify
