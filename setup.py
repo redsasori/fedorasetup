@@ -1,5 +1,5 @@
 import os
-os.system('sudo dnf install figlet')
+os.system('sudo dnf -y install figlet')
 os.system('chmod +x *.sh')
 
 while True:
