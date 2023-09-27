@@ -1,36 +1,43 @@
-import os
-os.system('sudo dnf -y install figlet')
-os.system('chmod +x *.sh')
+#!/bin/bash
 
-while True:
+# Install figlet if not already installed
+sudo dnf -y install figlet
 
-    print("\n1) Desktop Setup AMD GPU")
-    print("\n2) Desktop Setup Intel")
-    print("\n3) Auto-cpufreq(Battery Saving utility for laptops)")
-    print("\n4) Install Gaming stuff")
-    print("\n5) To exit the script \n")
+# Make shell scripts executable
+chmod +x *.sh
 
-    uchoice=int(input("Enter Your Choice : "))
+while true; do
+    echo -e "\n1) Desktop Setup AMD GPU"
+    echo -e "\n2) Desktop Setup Intel"
+    echo -e "\n3) Auto-cpufreq (Battery Saving utility for laptops)"
+    echo -e "\n4) Install Gaming stuff"
+    echo -e "\n5) To exit the script \n"
 
-    if uchoice==1:
-        print("\nDoing Setup for You")
-        os.system("sh desktopamd.sh")
+    read -p "Enter Your Choice : " uchoice
 
-    elif uchoice==2:
-        print("\nDoing Setup for You")
-        os.system("sh desktopintel.sh")
-
-    elif uchoice==3:
-        print("\nInstalling auto-cpufreq")
-        os.system("sh autocpufreq.sh")
-
-    elif uchoice==4:
-        print("\nInstalling Gaming Stuff")
-        os.system("sh gaming.sh")
-
-    elif uchoice==5:
-        print("\nExiting the Script")
-        break
-
-    else:
-        print("\nEnter a valid choice")
+    case "$uchoice" in
+        1)
+            echo -e "\nDoing Setup for You"
+            sh desktopamd.sh
+            ;;
+        2)
+            echo -e "\nDoing Setup for You"
+            sh desktopintel.sh
+            ;;
+        3)
+            echo -e "\nInstalling auto-cpufreq"
+            sh autocpufreq.sh
+            ;;
+        4)
+            echo -e "\nInstalling Gaming Stuff"
+            sh gaming.sh
+            ;;
+        5)
+            echo -e "\nExiting the Script"
+            break
+            ;;
+        *)
+            echo -e "\nEnter a valid choice"
+            ;;
+    esac
+done
