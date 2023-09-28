@@ -3,6 +3,9 @@
 #AMD GPU drivers
 install_amd_drivers() {
     echo "Driver is already Installed"
+    echo "Now Installing CoreCtrl"
+    sudo dnf install corectrl;
+   
 }
 
 #NVIDIA GPU drivers
