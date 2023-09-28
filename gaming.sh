@@ -1,5 +1,5 @@
 #Steam
-sudo dnf install steam
+flatpak install flathub com.valvesoftware.Steam
 
 #Heroic
 flatpak install flathub com.heroicgameslauncher.hgl
