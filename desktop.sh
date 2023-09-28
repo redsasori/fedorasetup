@@ -1,7 +1,7 @@
 echo 'Welcome to Fedora Desktop Setup Script made by NSM' 
 
 #log_file
-echo 'If you face any error check /tmp/desktopamd.log'
+echo 'If you face any error check /tmp/desktop.log'
 log_file="/tmp/desktopamd.log"
 exec > >(tee -a "$log_file") 2>&1
 
