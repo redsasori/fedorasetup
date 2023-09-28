@@ -10,7 +10,7 @@ chmod +x *.sh
 
 while true; do
     echo -e "\n1) Desktop Setup(Must Use)"
-    echo -e "\n2) Gpu Drivers Install"
+    echo -e "\n2) Gpu Driver Install"
     echo -e "\n3) Auto-cpufreq (Battery Saving utility for laptops)"
     echo -e "\n4) Install Gaming stuff"
     echo -e "\n5) To exit the script \n"
