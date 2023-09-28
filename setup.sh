@@ -9,8 +9,8 @@ echo "$scriptby"
 chmod +x *.sh
 
 while true; do
-    echo -e "\n1) Desktop Setup AMD GPU"
-    echo -e "\n2) Desktop Setup Intel"
+    echo -e "\n1) Desktop Setup(Must Use)"
+    echo -e "\n2) Gpu Drivers Install"
     echo -e "\n3) Auto-cpufreq (Battery Saving utility for laptops)"
     echo -e "\n4) Install Gaming stuff"
     echo -e "\n5) To exit the script \n"
@@ -20,11 +20,11 @@ while true; do
     case "$uchoice" in
         1)
             echo -e "\nDoing Setup for You"
-            sh desktopamd.sh
+            sh desktop.sh
             ;;
         2)
-            echo -e "\nDoing Setup for You"
-            sh desktopintel.sh
+            echo -e "\nInstalling GPU drivers for You"
+            sh gpu_drivers.sh
             ;;
         3)
             echo -e "\nInstalling auto-cpufreq"
