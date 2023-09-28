@@ -65,6 +65,7 @@ wget https://github.com/ONLYOFFICE/appimage-desktopeditors/releases/download/v7.
 echo 'Getting Obsidian for ya'
 wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.2.8/Obsidian-1.2.8.AppImage && sudo chmod +x Obsidian-1.2.8.AppImage;
 
+mkdir /home/$USER/Applications
 cp -a *.AppImage /home/$USER/Applications
 
 #Alacritty
