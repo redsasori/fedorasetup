@@ -2,7 +2,7 @@ echo 'Welcome to Fedora Desktop Setup Script made by NSM'
 
 #log_file
 echo 'If you face any error check /tmp/desktop.log'
-log_file="/tmp/desktopamd.log"
+log_file="/tmp/desktop.log"
 exec > >(tee -a "$log_file") 2>&1
 
 #dnfconfig
