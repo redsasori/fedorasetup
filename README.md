@@ -7,7 +7,7 @@
    git clone https://github.com/redsasori/fedorasetup/
    ```
 
-2. cd fedorasetup
+2. ```shell cd fedorasetup```
    
 3. Allow execute permission for the bash script
    ```shell
