@@ -2,20 +2,23 @@
 
 ### **Installation Steps:**
 
-1. Install Python in Fedora 
+1. git clone the repo
    ```shell
-   sudo dnf install python3
+   git clone https://github.com/redsasori/fedorasetup/
    ```
 
-2. Clone or Download Zip
-   Extract the folder named **_fedorasetup_**
-
-3. Run the Python Script 
+2. cd fedorasetup
+   
+3. Allow execute permission for the bash script
    ```shell
-   python3 setup.py
+   sudo chmod +x setup.sh 
    ```
 
-4. Choose the Option You Desire 
+4. run the script
+   ```shell
+   ./setup.sh 
+   ```
+5. Choose the option of your choice.
 
-5. Relax with a Cup of Tea or Coffee 
+6. Relax with a Cup of Tea or Coffee 
    Your Setup is Now Complete! 
