@@ -15,7 +15,7 @@ install_nvidia_drivers() {
 #Intel GPU drivers
 install_intel_drivers() {
     echo "Installing Intel GPU drivers..."
-    
+    sudo dnf install libva-intel-driver
     echo "Intel GPU drivers installed successfully."
 }
 
