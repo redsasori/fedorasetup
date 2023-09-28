@@ -93,9 +93,5 @@ echo 'Installing few handy apps'
 sudo dnf install -y okular mpv;
 sudo dnf install -y gnome-tweaks;
 
-#corectrl
-echo 'Installing CoreCtrl'
-sudo dnf install corectrl;
-
 sync;
 
