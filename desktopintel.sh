@@ -1,7 +1,9 @@
+echo 'Welcome to Fedora Desktop Setup Script made by NSM' 
+
 #log_file
+echo 'If you face any error check /tmp/desktopintel.log'
 log_file="/tmp/desktopintel.log"
 exec > >(tee -a "$log_file") 2>&1
-
 
 #dnfconfig
 echo 'Making some necessary changes in dnf config'
