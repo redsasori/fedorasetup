@@ -29,9 +29,6 @@ sudo dnf groupupdate multimedia sound-and-video;
 sudo dnf install -y rpmfusion-nonfree-release-tainted
 sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware"
 
-#mesa_git
-sudo dnf copr enable xxmitsu/mesa-git
-
 #Dragora
 echo  'Installing Dragora'
 sudo dnf install -y dnfdragora;
