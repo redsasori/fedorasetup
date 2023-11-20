@@ -66,7 +66,7 @@ chmod a+x DesktopEditors-x86_64.AppImage
 #Obsidian
 echo 'Getting Obsidian for ya'
 wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.4.16/Obsidian-1.4.16.AppImage
-chmod a+x Obsidian-1.2.8.AppImage
+chmod a+x Obsidian-1.4.16.AppImage
 
 mkdir /home/$USER/Applications
 cp -a *.AppImage /home/$USER/Applications
