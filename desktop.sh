@@ -60,11 +60,13 @@ sudo rpm -i appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
 echo 'Removing LibreOffice'
 sudo dnf remove libreoffice*
 echo 'Downloading Onlyoffice'
-wget https://github.com/ONLYOFFICE/appimage-desktopeditors/releases/download/v7.3.3/DesktopEditors-x86_64.AppImage && chmod +x DesktopEditors-x86_64.AppImage;
+wget https://download.onlyoffice.com/install/desktop/editors/linux/DesktopEditors-x86_64.AppImage
+chmod a+x DesktopEditors-x86_64.AppImage
 
 #Obsidian
 echo 'Getting Obsidian for ya'
-wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.2.8/Obsidian-1.2.8.AppImage && sudo chmod +x Obsidian-1.2.8.AppImage;
+wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.4.16/Obsidian-1.4.16.AppImage
+chmod a+x Obsidian-1.2.8.AppImage
 
 mkdir /home/$USER/Applications
 cp -a *.AppImage /home/$USER/Applications
