@@ -69,6 +69,7 @@ wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.4.16/O
 chmod a+x Obsidian-1.4.16.AppImage
 
 mkdir /home/$USER/Applications
+cd /home/$USER/fedorasetup/
 cp -a *.AppImage /home/$USER/Applications
 
 #Alacritty
