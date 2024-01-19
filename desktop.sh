@@ -56,10 +56,6 @@ sudo dnf install -y codium;
 echo 'Getting Obsidian for ya'
 flatpak install flathub md.obsidian.Obsidian
 
-mkdir /home/$USER/Applications
-cd /home/$USER/fedorasetup/
-cp -a *.AppImage /home/$USER/Applications
-
 #Alacritty
 echo 'Downloading the Best terminal alacritty' 
 sudo dnf install -y alacritty;
