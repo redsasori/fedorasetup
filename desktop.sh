@@ -36,7 +36,6 @@ sudo dnf install -y dnfdragora;
 #Flatpak
 echo 'Installing Flatpak'
 sudo dnf install flatpak;
-flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 #Flatseal
 echo 'Installing Flatseal'
