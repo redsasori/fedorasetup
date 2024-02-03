@@ -43,10 +43,10 @@ sudo dnf install -y flatseal;
 
 #Tg
 echo 'Installing Telegram Desktop'
-flatpak install flathub org.telegram.desktop;
+flatpak install Telegram
 
 #ExtensionManager
-flatpak install flathub com.mattjakeman.ExtensionManager
+flatpak install ExtensionManager
 
 #Codium
 
@@ -56,7 +56,7 @@ sudo dnf install -y codium;
 
 #Obsidian
 echo 'Getting Obsidian for ya'
-flatpak install flathub md.obsidian.Obsidian
+flatpak install flathub Obsidian
 
 #Alacritty
 echo 'Downloading the Best terminal alacritty' 
@@ -72,7 +72,7 @@ sudo dnf install -y qemu-kvm libvirt virt-install bridge-utils virt-manager libv
 
 #Spotify
 echo 'Installing Spotiy'
-flatpak install flathub com.spotify.Client
+flatpak install spotify
 
 #small_apps
 echo 'Installing few handy apps'
