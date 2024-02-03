@@ -41,22 +41,11 @@ sudo dnf install flatpak;
 echo 'Installing Flatseal'
 sudo dnf install -y flatseal;
 
-#Tg
-echo 'Installing Telegram Desktop'
-flatpak install Telegram
-
-#ExtensionManager
-flatpak install ExtensionManager
-
 #Codium
 
 sudo rpmkeys --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg;
 printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=download.vscodium.com\nbaseurl=https://download.vscodium.com/rpms/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg\nmetadata_expire=1h" | sudo tee -a /etc/yum.repos.d/vscodium.repo;
 sudo dnf install -y codium;
-
-#Obsidian
-echo 'Getting Obsidian for ya'
-flatpak install flathub Obsidian
 
 #Alacritty
 echo 'Downloading the Best terminal alacritty' 
@@ -69,10 +58,6 @@ sudo dnf install -y fastfetch;
 #QEMU
 echo 'Installing QEMU'
 sudo dnf install -y qemu-kvm libvirt virt-install bridge-utils virt-manager libvirt-devel virt-top libguestfs-tools guestfs-tools && sudo systemctl start libvirtd && sudo systemctl enable libvirtd;
-
-#Spotify
-echo 'Installing Spotiy'
-flatpak install spotify
 
 #small_apps
 echo 'Installing few handy apps'
